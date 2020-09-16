@@ -25,7 +25,7 @@ File: Layout CSS
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:250px 0 150px;}
+#pageintro{padding:75px 0 150px;}
 
 #pageintro .introtxt{display:block; max-width:50%; margin:0 auto; text-align:center;}
 #pageintro .introtxt *{margin:0;}
@@ -137,12 +137,15 @@ File: Layout CSS
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 #mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:20px; line-height:27px;}
 
 /* Top Navigation */
+#mainav ul{font-family: 'Kadwa', serif; font-weight: bold;}
+#mainav ul ul{font-family: 'Kadwa', serif; font-weight: normal; font-size: 1.2rem;}
 #mainav{}
-#mainav ul.clear{margin-top:3px;}
-#mainav ul{text-transform:uppercase;}
+#mainav ul.clear{margin-top:3px; padding:20px;}
+#mainav ul.clear2{margin-top:3px; text-align:center;}
+#mainav ul{text-transform:uppercase; font-size:20px;}
 #mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
 #mainav ul ul ul{left:180px; top:0;}
 #mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
@@ -150,7 +153,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav li li{width:100%; margin:0;}
 #mainav li a{display:block; padding:0 0 10px 0;}
 #mainav li li a{border:solid; border-width:0 0 1px 0;}
-#mainav .drop{padding-left:15px;}
+#mainav .drop{padding-left:25px;}
 #mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
 #mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
 #mainav .drop::after{top:5px; left:5px;}
@@ -221,21 +224,21 @@ td{border-width:0 1px;}
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
 body{color:#FFFFFF; background-color:#1B1F25;}
-a{color:#56AED4;}
+a{color:#3fbc54;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
-input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
+input:focus, textarea:focus, *:required:focus{border-color:#3fbc54;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 .overlay.coloured::after{color:inherit; background-color:rgba(46,53,65,.8);/* #2E3541 */}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#56AED4; border-color:#56AED4;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#3fbc54; border-color:#3fbc54;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
 .icon{border-color:#D7D7D7;}
-article:hover .icon{border-color:inherit; color:#FFFFFF; background-color:#56AED4;}
+article:hover .icon{border-color:inherit; color:#FFFFFF; background-color:#3fbc54;}
 
 
 /* Rows */
@@ -251,18 +254,18 @@ article:hover .icon{border-color:inherit; color:#FFFFFF; background-color:#56AED
 
 
 /* Full Width Split Box */
-.split{color:#FFFFFF; background-color:#2E3541;}/* Changes in mediaqueries */
+.split{color:#FFFFFF; background-color:rgb(46,53,65,.5);}/* Changes in mediaqueries */
 .split .box{background-color:inherit;}
-.split .box .elements li::before{background-color:#56AED4;}
+.split .box .elements li::before{background-color:#3fbc54;}
 .split .box .elements li article .icon i{color:#2E3541; background-color:#FFFFFF; border-color:#FFFFFF;}
 .split .box .elements li article .icon i::after{border-color:#2E3541;}
-.split .box .elements li article:hover .icon i{color:inherit; background-color:#56AED4; border-color:#56AED4;}
+.split .box .elements li article:hover .icon i{color:inherit; background-color:#3fbc54; border-color:#3fbc54;}
 
 
 /* Latest */
 #latest ul li article{border-color:#D7D7D7}
 #latest ul li article:hover{border-color:#2E3541;}
-#latest ul li article:hover .btn{color:#56AED4; background-color:#FFFFFF; border-color:#2E3541;}
+#latest ul li article:hover .btn{color:#3fbc54; background-color:#FFFFFF; border-color:#2E3541;}
 
 
 /* Footer */
@@ -271,26 +274,26 @@ article:hover .icon{border-color:inherit; color:#FFFFFF; background-color:#56AED
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#56AED4; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#3fbc54; background-color:inherit;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#56AED4;}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#3fbc54;}
 #mainav form select{color:#FFFFFF; background-color:rgba(0,0,0,.5); border-color:rgba(136,136,136,.9);/* #888888 */}
 
 #breadcrumb a{color:inherit; background-color:inherit;}
-#breadcrumb li:last-child a{color:#56AED4;}
+#breadcrumb li:last-child a{color:#3fbc54;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
-.container .sidebar nav a:hover{color:#56AED4;}
+.container .sidebar nav a:hover{color:#3fbc54;}
 
 .pagination a, .pagination strong{border-color:#D7D7D7;}
-.pagination .current *{color:#FFFFFF; background-color:#56AED4;}
+.pagination .current *{color:#FFFFFF; background-color:#3fbc54;}
 
-#backtotop{color:#FFFFFF; background-color:#56AED4;}
+#backtotop{color:#FFFFFF; background-color:#3fbc54;}
 
 
 /* Tables + Comments */
 table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
-#comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:#56AED4;}
+#comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:#3fbc54;}
 th{color:#FFFFFF; background-color:#373737;}
 tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
 tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
@@ -348,7 +351,7 @@ table a, #comments a{background-color:inherit;}
 	#header{text-align:center;}
 	#header #logo{margin-bottom:25px;}
 
-	#pageintro{padding:150px 0;}
+	#pageintro{padding:75px 0;}
 	#pageintro .introtxt{max-width:none;}
 
 	.split{background-color:rgba(46,53,65,.5);/* #2E3541 */}
