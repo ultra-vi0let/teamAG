@@ -25,7 +25,7 @@ File: Layout CSS
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:75px 0 150px;}
+#pageintro{padding:0px 0 50px;}
 
 #pageintro .introtxt{display:block; max-width:50%; margin:0 auto; text-align:center;}
 #pageintro .introtxt *{margin:0;}
@@ -163,7 +163,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 #mainav form{display:none; margin:0; padding:0;}
 #mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
-#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select{width:auto; margin:auto; padding:5px; border:1px solid; font-size: 18pt;}
 #mainav form select option{margin:5px; padding:0; border:none;}
 
 /* Breadcrumb */
