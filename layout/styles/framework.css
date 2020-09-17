@@ -32,7 +32,8 @@ article p{font-size: 1.2rem}
 .bgded{background-position:top center; background-repeat:no-repeat; background-size:cover;}
 .circle{border-radius:50%; background-clip:padding-box;}
 
-.btn{display:inline-block; padding:15px 25px 17px; text-transform:uppercase; border:1px solid;}
+.btn{display:inline-block; padding:15px 25px 17px; text-transform:uppercase; border:1px solid; border-radius: .5em; box-shadow: 0 0px 10px 1px rgba(0,0,0,.8);
+}
 .btn.medium{padding:10px 20px 12px;}
 .btn.small{padding:8px 18px 10px; text-transform:none;}
 .btn.bold{font-family: 'Kadwa', serif; font-weight: bold;}
