@@ -62,6 +62,10 @@ File: Layout CSS
 .sidebar .sdb_holder{margin-bottom:50px;}
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
 
+p.motto{padding:0 10% 0 10%; font-family: "Kadwa", serif; line-height: 4rem;font-size: 1.6rem;font-weight: normal;margin: 0 0 70px 0; text-align:center;}
+p.motto em{font-weight: bold; font-style: normal; font-size: 2rem;)
+}
+
 
 /* Full Width Split Box
 --------------------------------------------------------------------------------------------------------------- */
@@ -101,6 +105,9 @@ File: Layout CSS
 #footer{padding:80px 0;}
 
 #footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem;}
+#footer h2.title{margin:0 0 50px 0; padding:0; font-size:1.8rem;}
+
+#footer p.ptext{font-size: 1.2rem;}
 
 #footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
 #footer .linklist li:last-child{margin:0; padding:0; border:none;}
@@ -108,7 +115,7 @@ File: Layout CSS
 #footer .linklist li, #footer .linklist li::after{clear:both;}
 
 #footer .contact{}
-#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{font-weight: bold; position:relative; padding-left:40px;}
 #footer .contact li *{margin:0; padding:0; line-height:1.6;}
 #footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
 
@@ -290,7 +297,7 @@ article:hover .icon{border-color:inherit; color:#FFFFFF; background-color:#3fbc5
 
 
 /* Footer */
-#footer .linklist li{border-color:#1B1F25;}
+/* #footer .linklist li{border-color:#1B1F25;} */
 
 
 /* Navigation */
